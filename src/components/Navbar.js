@@ -28,7 +28,7 @@ const NavLink = css`
 
 const Logo = styled(Link)`
     ${NavLink}
-    color: #FFDEE5;
+    color: #fff;
 `;
 
 const MenuBars = styled.i``
@@ -36,7 +36,8 @@ const MenuBars = styled.i``
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
-`
+    margin-right: -44px;
+`;
 
 const NavMenuLinks = styled(Link)`
     ${NavLink}
@@ -61,7 +62,7 @@ const Navbar = () => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to="/contact">
+                <Button to="/contact" primary='true'>
                     Contact Us
                 </Button>
             </NavBtn>
